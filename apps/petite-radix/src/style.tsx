@@ -43,20 +43,21 @@ const contentClass = css({
   },
 });
 const anchorClass = css({
-    variants: {
-        backgroundColor: {
-          hotpink: { backgroundColor: 'hotpink' },
-          blue: { backgroundColor: 'blue' },
-          orange: { backgroundColor: 'orange' },
-        },
-        size: {
-          small: { width: 50, height: 50 },
-          large: { width: 100, height: 100 },
-        },
-      },
-      defaultVariants: {
-        size: 'large',
+  variants: {
+    backgroundColor: {
+      hotpink: { backgroundColor: 'hotpink' },
+      blue: { backgroundColor: 'blue' },
+      orange: { backgroundColor: 'orange' },
+      red: { backgroundColor: 'red' },
     },
+    size: {
+      small: { width: 50, height: 50 },
+      large: { width: 100, height: 100 },
+    },
+  },
+  defaultVariants: {
+    size: 'large',
+  },
 });
 
 const arrowClass = css({

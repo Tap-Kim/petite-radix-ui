@@ -5,14 +5,22 @@ import { Scrollable, anchorClass, CustomArrow, animatedContentClass } from '../s
 const WithCustomArrow = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    <Scrollable style={{height: 100}}>
+    <Scrollable style={{ height: 100 }}>
       <Popper.Root>
-        <Popper.Anchor className={anchorClass({ backgroundColor: 'blue', size: 'large'})} onClick={() => setOpen(true)}>
+        <Popper.Anchor
+          className={anchorClass({ backgroundColor: 'blue', size: 'large' })}
+          onClick={() => setOpen(true)}
+        >
           open
         </Popper.Anchor>
 
         {open && (
-          <Popper.Content className={animatedContentClass()} side="right" sideOffset={5}>
+          <Popper.Content
+            className={animatedContentClass()}
+            side="right"
+            sideOffset={5}
+            style={{ backgroundColor: 'blue' }}
+          >
             <button onClick={() => setOpen(false)}>close</button>
             <Popper.Arrow asChild offset={20}>
               <CustomArrow width={20} height={10} />

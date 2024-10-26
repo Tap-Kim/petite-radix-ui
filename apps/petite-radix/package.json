@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@petite-radix/react-popper": "workspace:*",
-    "@radix-ui/react-portal": "latest", 
+    "@radix-ui/react-portal": "latest",
+    "@radix-ui/react-popover": "latest",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
