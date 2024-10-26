@@ -11,8 +11,8 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@floating-ui/react-dom": "^2.1.2",
-    "@petite-radix/react-context": "workspace:*",
+    "@petite-radix/react-popper": "workspace:*",
+    "@radix-ui/react-portal": "latest", 
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

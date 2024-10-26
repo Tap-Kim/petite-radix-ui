@@ -23,9 +23,9 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "paths": {
-      "@radix-ui/react-compose-refs": ["./packages/compose-refs/src"],
-      "@radix-ui/react-context": ["./packages/context/src"],
+      "@petite-radix/react-context": ["./packages/context/src"],
+      "@petite-radix/react-popper": ["./packages/popper/src"],
     }
   },
-  "include": [".", "apps/petite-radix/src", "packages/*/src"],
+  "include": [".", "packages/*/src"],
 }

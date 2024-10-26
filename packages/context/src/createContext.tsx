@@ -16,7 +16,7 @@ function createContextScope(scopeName: string, createContextScopeDeps: CreateSco
 
   function createContext<ContextValueType extends object | null>(
     rootComponentName: string,
-    defaultContext?: ContextValueType
+    defaultContext?: ContextValueType,
   ) {
     const BaseContext = React.createContext<ContextValueType | undefined>(defaultContext);
     const index = defaultContexts.length;
@@ -59,7 +59,7 @@ function createContextScope(scopeName: string, createContextScopeDeps: CreateSco
       const contexts = scope?.[scopeName] || scopeContexts;
       return React.useMemo(
         () => ({ [`__scope${scopeName}`]: { ...scope, [scopeName]: contexts } }),
-        [scope, contexts]
+        [scope, contexts],
       );
     };
   };
