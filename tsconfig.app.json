@@ -21,7 +21,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "paths": {
+      "@radix-ui/react-compose-refs": ["./packages/compose-refs/src"],
+      "@radix-ui/react-context": ["./packages/context/src"],
+    }
   },
-  "include": [".", "apps/petite-popper/src", "packages/*/src"],
+  "include": [".", "apps/petite-radix/src", "packages/*/src"],
 }

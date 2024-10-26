@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@floating-ui/react-dom": "^2.1.2",
+    "@petite-radix/react-context": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
