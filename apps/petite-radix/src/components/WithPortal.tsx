@@ -1,7 +1,7 @@
 import * as Popper from '@petite-radix/react-popper';
 import { Portal } from '@radix-ui/react-portal';
 import React from 'react';
-import { Scrollable, anchorClass, contentClass, arrowClass } from '../style';
+import { Scrollable, anchorClass, animatedContentClass } from '../style';
 
 const WithPortal: React.FC = () => {
   const [open, setOpen] = React.useState(false);
@@ -18,13 +18,12 @@ const WithPortal: React.FC = () => {
         {open && (
           <Portal asChild>
             <Popper.Content
-              className={contentClass()}
+              className={animatedContentClass()}
               sideOffset={5}
               side="right"
               style={{ backgroundColor: 'orange' }}
             >
               <button onClick={() => setOpen(false)}>close</button>
-              <Popper.Arrow className={arrowClass()} width={20} height={10} />
             </Popper.Content>
           </Portal>
         )}

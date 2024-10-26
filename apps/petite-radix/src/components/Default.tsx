@@ -1,6 +1,6 @@
 import * as Popper from '@petite-radix/react-popper';
 import React from 'react';
-import { Scrollable, anchorClass, CustomArrow, animatedContentClass } from '../style';
+import { Scrollable, anchorClass, animatedContentClass } from '../style';
 
 const WithCustomArrow = () => {
   const [open, setOpen] = React.useState(false);
@@ -22,9 +22,6 @@ const WithCustomArrow = () => {
             style={{ backgroundColor: 'blue' }}
           >
             <button onClick={() => setOpen(false)}>close</button>
-            <Popper.Arrow asChild offset={20}>
-              <CustomArrow width={20} height={10} />
-            </Popper.Arrow>
           </Popper.Content>
         )}
       </Popper.Root>
